@@ -501,7 +501,7 @@
       document.getElementById('errorMsg').classList.remove('show');
 
       try {
-        const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=6N53DV5XH4VEGTUX633DYWBNL&q=${encodeURIComponent(city)}&days=7`);
+        const res = await fetch(`https://api.weatherapi.com/v1/current.json?key=6N53DV5XH4VEGTUX633DYWBNL&q=${encodeURIComponent(city)}`);
         const json = await res.json();
 
         if (!res.ok) {
